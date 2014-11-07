@@ -8,5 +8,6 @@ namespace Metier
 {
     public class Agence
     {
+        
     }
 }
