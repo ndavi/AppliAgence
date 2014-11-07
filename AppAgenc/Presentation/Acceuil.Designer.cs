@@ -1,6 +1,6 @@
 ﻿namespace AppAgenc
 {
-    partial class Form1
+    partial class Acceuil
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
