@@ -1,3 +1,12 @@
 H:\SLAM4\AppAgenc\AppAgenc\bin\Debug\AppAgenc.exe.config
 M:\ndavi\AppliAgence\AppAgenc\bin\Debug\AppAgenc.exe.config
 E:\yhamo\AppliAgence\AppAgenc\bin\Debug\AppAgenc.exe.config
+C:\Users\yhamo\Source\Repos\AppliAgence\AppAgenc\bin\Debug\AppAgenc.exe.config
+C:\Users\yhamo\Source\Repos\AppliAgence\AppAgenc\bin\Debug\AppAgenc.exe
+C:\Users\yhamo\Source\Repos\AppliAgence\AppAgenc\bin\Debug\AppAgenc.pdb
+C:\Users\yhamo\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.csprojResolveAssemblyReference.cache
+C:\Users\yhamo\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.Acceuil.resources
+C:\Users\yhamo\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.Properties.Resources.resources
+C:\Users\yhamo\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.csproj.GenerateResource.Cache
+C:\Users\yhamo\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.exe
+C:\Users\yhamo\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.pdb
