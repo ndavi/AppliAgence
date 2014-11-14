@@ -5,15 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters;
-
 
 namespace Metier
 {
-    class Serialisation
+    public class Serialisation
     {
         private Agence uneAgence;
-        private Agence importBinaire()
+        public Agence importBinaire()
         {
             //On affiche une fenêtre permettant de choisir un fichier à charger
             OpenFileDialog FileDialogBin = new OpenFileDialog();
@@ -62,7 +60,7 @@ namespace Metier
             }
         }
 
-        private void exportBinaire()
+        public void exportBinaire()
         {
             //On affiche une fenêtre permettant de saisir un fichier dans lequel sauvegarder
             SaveFileDialog FileDialogBin = new SaveFileDialog();
@@ -104,6 +102,83 @@ namespace Metier
                 finally
                 {
                     unFlux.Close();
+                }
+            }
+        }
+
+        public Agence importXml()
+        {
+            OpenFileDialog fileDialogXML = new OpenFileDialog();
+            fileDialogXML.Title = "Choisissez un fichier";
+            fileDialogXML.Filter = "Fichiers XML (*.xml) | *.xml";
+            DialogResult result = fileDialogXML.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                string cheminComplet = "";
+                string nomFichier = "";
+                string chemin = "";
+                cheminComplet = fileDialogXML.FileName;
+                cheminComplet = cheminComplet.Replace("\\", "\\\\");
+                nomFichier = cheminComplet.Substring(cheminComplet.LastIndexOf("\\\\") + 2, cheminComplet.Length - cheminComplet.LastIndexOf("\\\\") - 2);
+                chemin = cheminComplet.Substring(0, cheminComplet.Length - (nomFichier.Length + 2));
+                FileStream stream = null;
+                XmlSerializer serializer;
+                Directory.SetCurrentDirectory(chemin);
+                if (File.Exists(nomFichier))
+                {
+                    try
+                    {
+                        stream = new FileStream(nomFichier, FileMode.Open, FileAccess.Read);
+                        serializer = new XmlSerializer(typeof(Agence));
+                        this.uneAgence = (Agence)serializer.Deserialize(stream);
+                        stream.Close();
+                        MessageBox.Show("La désérialisation s'est terminée avec succès !", "Désérialisation finie", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("\n" + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    finally
+                    {
+                        stream.Close();
+                        return this.uneAgence;
+                    }
+                }
+            }
+        }
+
+        public void exportXml()
+        {
+            SaveFileDialog fileDialogXML = new SaveFileDialog();
+            fileDialogXML.Title = "Saisissez un fichier";
+            fileDialogXML.Filter = "Fichiers XML (*.xml) | *.xml";
+            DialogResult result = fileDialogXML.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                string cheminComplet = "";
+                string nomFichier = "";
+                string chemin = "";
+                cheminComplet = fileDialogXML.FileName;
+                cheminComplet = cheminComplet.Replace("\\", "\\\\");
+                nomFichier = cheminComplet.Substring(cheminComplet.LastIndexOf("\\\\") + 2, cheminComplet.Length - cheminComplet.LastIndexOf("\\\\") - 2);
+                chemin = cheminComplet.Substring(0, cheminComplet.Length - (nomFichier.Length + 2));
+                FileStream stream = null;
+                XmlSerializer serializer;
+                try
+                {
+                    Directory.SetCurrentDirectory(chemin);
+                    stream = new FileStream(nomFichier, FileMode.Create);
+                    serializer = new XmlSerializer(typeof(Agence));
+                    serializer.Serialize(stream, uneAgence);
+                    MessageBox.Show("La sérialisation s'est terminée avec succès !", "Sérialisation finie", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("\n" + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    stream.Close();
                 }
             }
         }
