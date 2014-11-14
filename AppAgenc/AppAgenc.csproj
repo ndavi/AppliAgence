@@ -51,9 +51,54 @@
       <DependentUpon>Acceuil.cs</DependentUpon>
     </Compile>
     <Compile Include="Controleur\Program.cs" />
+    <Compile Include="Presentation\AjouterUnePersonne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\AjouterUnePersonne.designer.cs">
+      <DependentUpon>AjouterUnePersonne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\AjouterUneVoiture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\AjouterUneVoiture.designer.cs">
+      <DependentUpon>AjouterUneVoiture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\LouerVoiture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\LouerVoiture.designer.cs">
+      <DependentUpon>LouerVoiture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\SupprimerUnePersonne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\SupprimerUnePersonne.designer.cs">
+      <DependentUpon>SupprimerUnePersonne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\SupprimerUneVoiture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\SupprimerUneVoiture.designer.cs">
+      <DependentUpon>SupprimerUneVoiture.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Presentation\Acceuil.resx">
       <DependentUpon>Acceuil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\AjouterUnePersonne.resx">
+      <DependentUpon>AjouterUnePersonne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\AjouterUneVoiture.resx">
+      <DependentUpon>AjouterUneVoiture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\LouerVoiture.resx">
+      <DependentUpon>LouerVoiture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\SupprimerUnePersonne.resx">
+      <DependentUpon>SupprimerUnePersonne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\SupprimerUneVoiture.resx">
+      <DependentUpon>SupprimerUneVoiture.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
