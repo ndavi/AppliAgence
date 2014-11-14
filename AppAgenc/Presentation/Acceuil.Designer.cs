@@ -34,14 +34,14 @@
             this.gérerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.voituresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.personnesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.locationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supprimerUneVoitureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personnesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterUnePersonneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supprimerUnePersonneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.locationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.rendreUneVoitureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toutesLesVoituresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toutesLesPersonnesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -70,8 +70,9 @@
             // quitterToolStripMenuItem
             // 
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.quitterToolStripMenuItem.Text = "Quitter";
+            this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
             // gérerToolStripMenuItem
             // 
@@ -89,7 +90,7 @@
             this.ajouterToolStripMenuItem,
             this.supprimerUneVoitureToolStripMenuItem});
             this.voituresToolStripMenuItem.Name = "voituresToolStripMenuItem";
-            this.voituresToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.voituresToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.voituresToolStripMenuItem.Text = "Voitures";
             // 
             // ajouterToolStripMenuItem
@@ -98,38 +99,20 @@
             this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.ajouterToolStripMenuItem.Text = "Ajouter une voiture";
             // 
+            // supprimerUneVoitureToolStripMenuItem
+            // 
+            this.supprimerUneVoitureToolStripMenuItem.Name = "supprimerUneVoitureToolStripMenuItem";
+            this.supprimerUneVoitureToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.supprimerUneVoitureToolStripMenuItem.Text = "Supprimer une voiture";
+            // 
             // personnesToolStripMenuItem
             // 
             this.personnesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ajouterUnePersonneToolStripMenuItem,
             this.supprimerUnePersonneToolStripMenuItem});
             this.personnesToolStripMenuItem.Name = "personnesToolStripMenuItem";
-            this.personnesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.personnesToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.personnesToolStripMenuItem.Text = "Personnes";
-            // 
-            // locationsToolStripMenuItem
-            // 
-            this.locationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ajouterToolStripMenuItem1,
-            this.rendreUneVoitureToolStripMenuItem});
-            this.locationsToolStripMenuItem.Name = "locationsToolStripMenuItem";
-            this.locationsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.locationsToolStripMenuItem.Text = "Locations";
-            // 
-            // consultationToolStripMenuItem
-            // 
-            this.consultationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toutesLesVoituresToolStripMenuItem,
-            this.toutesLesPersonnesToolStripMenuItem});
-            this.consultationToolStripMenuItem.Name = "consultationToolStripMenuItem";
-            this.consultationToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
-            this.consultationToolStripMenuItem.Text = "Consultation";
-            // 
-            // supprimerUneVoitureToolStripMenuItem
-            // 
-            this.supprimerUneVoitureToolStripMenuItem.Name = "supprimerUneVoitureToolStripMenuItem";
-            this.supprimerUneVoitureToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
-            this.supprimerUneVoitureToolStripMenuItem.Text = "Supprimer une voiture";
             // 
             // ajouterUnePersonneToolStripMenuItem
             // 
@@ -143,6 +126,15 @@
             this.supprimerUnePersonneToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.supprimerUnePersonneToolStripMenuItem.Text = "Supprimer une personne";
             // 
+            // locationsToolStripMenuItem
+            // 
+            this.locationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ajouterToolStripMenuItem1,
+            this.rendreUneVoitureToolStripMenuItem});
+            this.locationsToolStripMenuItem.Name = "locationsToolStripMenuItem";
+            this.locationsToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.locationsToolStripMenuItem.Text = "Locations";
+            // 
             // ajouterToolStripMenuItem1
             // 
             this.ajouterToolStripMenuItem1.Name = "ajouterToolStripMenuItem1";
@@ -155,10 +147,19 @@
             this.rendreUneVoitureToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.rendreUneVoitureToolStripMenuItem.Text = "Rendre une voiture";
             // 
+            // consultationToolStripMenuItem
+            // 
+            this.consultationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toutesLesVoituresToolStripMenuItem,
+            this.toutesLesPersonnesToolStripMenuItem});
+            this.consultationToolStripMenuItem.Name = "consultationToolStripMenuItem";
+            this.consultationToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.consultationToolStripMenuItem.Text = "Consultation";
+            // 
             // toutesLesVoituresToolStripMenuItem
             // 
             this.toutesLesVoituresToolStripMenuItem.Name = "toutesLesVoituresToolStripMenuItem";
-            this.toutesLesVoituresToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.toutesLesVoituresToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.toutesLesVoituresToolStripMenuItem.Text = "Toutes les voitures";
             // 
             // toutesLesPersonnesToolStripMenuItem

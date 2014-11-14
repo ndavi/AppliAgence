@@ -31,6 +31,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.cbb_Voitures = new System.Windows.Forms.ComboBox();
+            this.cbb_Personnes = new System.Windows.Forms.ComboBox();
+            this.btn_Fermer = new System.Windows.Forms.Button();
+            this.btn_Valider = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -47,24 +51,63 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(78, 114);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.label2.Text = "Voiture :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(78, 175);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            this.label3.Text = "Personne :";
+            // 
+            // cbb_Voitures
+            // 
+            this.cbb_Voitures.FormattingEnabled = true;
+            this.cbb_Voitures.Location = new System.Drawing.Point(161, 114);
+            this.cbb_Voitures.Name = "cbb_Voitures";
+            this.cbb_Voitures.Size = new System.Drawing.Size(121, 21);
+            this.cbb_Voitures.TabIndex = 3;
+            // 
+            // cbb_Personnes
+            // 
+            this.cbb_Personnes.FormattingEnabled = true;
+            this.cbb_Personnes.Location = new System.Drawing.Point(161, 172);
+            this.cbb_Personnes.Name = "cbb_Personnes";
+            this.cbb_Personnes.Size = new System.Drawing.Size(121, 21);
+            this.cbb_Personnes.TabIndex = 4;
+            // 
+            // btn_Fermer
+            // 
+            this.btn_Fermer.Location = new System.Drawing.Point(90, 246);
+            this.btn_Fermer.Name = "btn_Fermer";
+            this.btn_Fermer.Size = new System.Drawing.Size(75, 23);
+            this.btn_Fermer.TabIndex = 5;
+            this.btn_Fermer.Text = "Fermer";
+            this.btn_Fermer.UseVisualStyleBackColor = true;
+            this.btn_Fermer.Click += new System.EventHandler(this.btn_Fermer_Click);
+            // 
+            // btn_Valider
+            // 
+            this.btn_Valider.Location = new System.Drawing.Point(251, 246);
+            this.btn_Valider.Name = "btn_Valider";
+            this.btn_Valider.Size = new System.Drawing.Size(75, 23);
+            this.btn_Valider.TabIndex = 6;
+            this.btn_Valider.Text = "Valider";
+            this.btn_Valider.UseVisualStyleBackColor = true;
             // 
             // LouerVoiture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(404, 296);
+            this.Controls.Add(this.btn_Valider);
+            this.Controls.Add(this.btn_Fermer);
+            this.Controls.Add(this.cbb_Personnes);
+            this.Controls.Add(this.cbb_Voitures);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -80,5 +123,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cbb_Voitures;
+        private System.Windows.Forms.ComboBox cbb_Personnes;
+        private System.Windows.Forms.Button btn_Fermer;
+        private System.Windows.Forms.Button btn_Valider;
     }
 }

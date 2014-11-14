@@ -8,19 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AppAgenc
+namespace AppAgenc.Presentation
 {
-    public partial class Acceuil : Form
+    public partial class RendreVoiture : Form
     {
-        public Acceuil()
+        public RendreVoiture()
         {
             InitializeComponent();
         }
 
-        private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btn_Fermer_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
     }
 }

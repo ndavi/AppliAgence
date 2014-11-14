@@ -69,6 +69,12 @@
     <Compile Include="Presentation\LouerVoiture.designer.cs">
       <DependentUpon>LouerVoiture.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\RendreVoiture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\RendreVoiture.Designer.cs">
+      <DependentUpon>RendreVoiture.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\SupprimerUnePersonne.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\LouerVoiture.resx">
       <DependentUpon>LouerVoiture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\RendreVoiture.resx">
+      <DependentUpon>RendreVoiture.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\SupprimerUnePersonne.resx">
       <DependentUpon>SupprimerUnePersonne.cs</DependentUpon>
@@ -121,6 +130,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Metier\Metier.csproj">
+      <Project>{14c69cd2-f0f7-4a76-9af0-ebc4f3bf9b82}</Project>
+      <Name>Metier</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
