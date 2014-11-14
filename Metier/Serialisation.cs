@@ -10,7 +10,7 @@ using System.Runtime.Serialization.Formatters;
 
 namespace Metier
 {
-    class Serialisation
+    public class Serialisation
     {
         private Agence uneAgence;
         private Agence importBinaire()
