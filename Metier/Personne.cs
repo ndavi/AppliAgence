@@ -27,12 +27,12 @@ namespace Metier
             get { return nom; }
             set { nom = value; }
         }
-        public void Personne()
+        public Personne()
         {
 
         }
 
-        public void Personne(string nom, string prenom, string ville)
+        public Personne(string nom, string prenom, string ville)
         {
             this.nom = nom;
             this.prenom = prenom;
