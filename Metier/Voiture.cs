@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Metier
 {
-    class Voiture
+    public class Voiture
     {
         #region Accesseurs
         private string categorie;
