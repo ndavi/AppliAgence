@@ -11,3 +11,12 @@ C:\Users\yhamo\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.csproj.Gener
 C:\Users\yhamo\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.exe
 C:\Users\yhamo\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.pdb
 C:\Users\ndavi\Source\Repos\AppliAgence\AppAgenc\bin\Debug\AppAgenc.exe.config
+D:\SI7\AppliAgence\AppAgenc\bin\Debug\AppAgenc.exe.config
+D:\SI7\AppliAgence\AppAgenc\bin\Debug\AppAgenc.exe
+D:\SI7\AppliAgence\AppAgenc\bin\Debug\AppAgenc.pdb
+D:\SI7\AppliAgence\AppAgenc\obj\Debug\AppAgenc.csprojResolveAssemblyReference.cache
+D:\SI7\AppliAgence\AppAgenc\obj\Debug\AppAgenc.Acceuil.resources
+D:\SI7\AppliAgence\AppAgenc\obj\Debug\AppAgenc.Properties.Resources.resources
+D:\SI7\AppliAgence\AppAgenc\obj\Debug\AppAgenc.csproj.GenerateResource.Cache
+D:\SI7\AppliAgence\AppAgenc\obj\Debug\AppAgenc.exe
+D:\SI7\AppliAgence\AppAgenc\obj\Debug\AppAgenc.pdb

@@ -51,6 +51,18 @@
       <DependentUpon>Acceuil.cs</DependentUpon>
     </Compile>
     <Compile Include="Controleur\Program.cs" />
+    <Compile Include="Presentation\ConsulterPersonnes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\ConsulterPersonnes.Designer.cs">
+      <DependentUpon>ConsulterPersonnes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\ConsulterVoitures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\ConsulterVoitures.Designer.cs">
+      <DependentUpon>ConsulterVoitures.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Presentation\Acceuil.resx">
       <DependentUpon>Acceuil.cs</DependentUpon>
