@@ -36,3 +36,4 @@ C:\Users\ndavi\Source\Repos\AppliAgence\AppAgenc\bin\Debug\Metier.dll
 C:\Users\ndavi\Source\Repos\AppliAgence\AppAgenc\bin\Debug\Metier.pdb
 C:\Users\ndavi\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.exe
 C:\Users\ndavi\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.pdb
+F:\Cours\B2SIO2\SLAM4\App\AppAgenc\bin\Debug\AppAgenc.exe.config

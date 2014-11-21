@@ -10,9 +10,14 @@ namespace Metier
 {
     public class Personne
     {
+        #region Attributs
         private string nom, prenom, ville;
+        #endregion
+
+        #region Getteur and setteur
         [DataMember]
         [XmlElement("Ville")]
+
         public string Ville
         {
             get { return ville; }
@@ -32,6 +37,10 @@ namespace Metier
             get { return nom; }
             set { nom = value; }
         }
+
+        #endregion
+
+        #region Contructeur
         public Personne()
         {
 
@@ -48,5 +57,6 @@ namespace Metier
             this.prenom = prenom;
             this.ville = ville;
         }
+        #endregion 
     }
 }
