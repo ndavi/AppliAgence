@@ -20,3 +20,4 @@ D:\SI7\AppliAgence\AppAgenc\obj\Debug\AppAgenc.Properties.Resources.resources
 D:\SI7\AppliAgence\AppAgenc\obj\Debug\AppAgenc.csproj.GenerateResource.Cache
 D:\SI7\AppliAgence\AppAgenc\obj\Debug\AppAgenc.exe
 D:\SI7\AppliAgence\AppAgenc\obj\Debug\AppAgenc.pdb
+F:\Cours\B2SIO2\SI7\Nouveau dossier\AppAgenc\bin\Debug\AppAgenc.exe.config
