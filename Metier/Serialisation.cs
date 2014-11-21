@@ -5,12 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.Serialization;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Xml.Serialization;
 
 namespace Metier
 {
     public class Serialisation
     {
         private Agence uneAgence;
+        /// <summary>
+        /// Importe une agence depuis un fichier binaire
+        /// </summary>
+        /// <returns>Retourne une agence instanciée</returns>
         public Agence importBinaire()
         {
             //On affiche une fenêtre permettant de choisir un fichier à charger
@@ -19,6 +26,7 @@ namespace Metier
             //On fixe l'extension à .ci
             FileDialogBin.Filter = "Fichiers CI (*.ci)|*.ci";
             DialogResult result = FileDialogBin.ShowDialog();
+            FileStream unFlux = null;
             //Si l'utilisateur clique sur "Charger"
             if (result == DialogResult.OK)
             {
@@ -32,7 +40,6 @@ namespace Metier
                 nomFichier = cheminComplet.Substring(cheminComplet.LastIndexOf("\\\\") + 2, cheminComplet.Length - cheminComplet.LastIndexOf("\\\\") - 2);
                 //On récupère le chemin du dossier qui contient le fichier ci-dessus (l'autre partie du chemin complet)
                 chemin = cheminComplet.Substring(0, cheminComplet.Length - (nomFichier.Length + 2));
-                FileStream unFlux = null;
                 BinaryFormatter fs;
                 try
                 {
@@ -50,17 +57,15 @@ namespace Metier
                 {
                     MessageBox.Show("\n" + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                finally
-                {
-                    unFlux.Close();
-                    return this.uneAgence;
-                }
-
-
             }
+            unFlux.Close();
+            return this.uneAgence;
         }
-
-        public void exportBinaire()
+        /// <summary>
+        /// Exportation d'une agence dans un fichier binaire
+        /// </summary>
+        /// <param name="uneAgence">Agence à exporter</param>
+        public void exportBinaire(Agence uneAgence)
         {
             //On affiche une fenêtre permettant de saisir un fichier dans lequel sauvegarder
             SaveFileDialog FileDialogBin = new SaveFileDialog();
@@ -105,13 +110,17 @@ namespace Metier
                 }
             }
         }
-
+        /// <summary>
+        /// Import d'un fichier en Xml
+        /// </summary>
+        /// <returns>Retourne un objet instancié Agence</returns>
         public Agence importXml()
         {
             OpenFileDialog fileDialogXML = new OpenFileDialog();
             fileDialogXML.Title = "Choisissez un fichier";
             fileDialogXML.Filter = "Fichiers XML (*.xml) | *.xml";
             DialogResult result = fileDialogXML.ShowDialog();
+            FileStream stream = null;
             if (result == DialogResult.OK)
             {
                 string cheminComplet = "";
@@ -121,7 +130,6 @@ namespace Metier
                 cheminComplet = cheminComplet.Replace("\\", "\\\\");
                 nomFichier = cheminComplet.Substring(cheminComplet.LastIndexOf("\\\\") + 2, cheminComplet.Length - cheminComplet.LastIndexOf("\\\\") - 2);
                 chemin = cheminComplet.Substring(0, cheminComplet.Length - (nomFichier.Length + 2));
-                FileStream stream = null;
                 XmlSerializer serializer;
                 Directory.SetCurrentDirectory(chemin);
                 if (File.Exists(nomFichier))
@@ -138,16 +146,15 @@ namespace Metier
                     {
                         MessageBox.Show("\n" + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-                    finally
-                    {
-                        stream.Close();
-                        return this.uneAgence;
-                    }
                 }
             }
+            stream.Close();
+            return this.uneAgence;
         }
-
-        public void exportXml()
+        /// <summary>
+        /// Sauvegarde un objet de type agence sur le disque dur
+        /// </summary>
+        public void exportXml(Agence uneAgence)
         {
             SaveFileDialog fileDialogXML = new SaveFileDialog();
             fileDialogXML.Title = "Saisissez un fichier";
