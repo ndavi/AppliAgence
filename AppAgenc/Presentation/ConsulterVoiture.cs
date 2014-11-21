@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Metier;
 
 namespace AppAgenc.Presentation
 {
@@ -15,6 +16,12 @@ namespace AppAgenc.Presentation
         public ConsulterVoiture()
         {
             InitializeComponent();
+            foreach (Voiture uneVoiture in Acceuil.UneAgence.ParcVoitures)
+            {
+                dgv.Rows.Add(uneVoiture.Nom, uneVoiture.Immatriculation,
+                    uneVoiture.Puissance, uneVoiture.DateMiseService,
+                    uneVoiture.Categorie, uneVoiture.EstLouee);
+            }
         }
 
     }

@@ -36,7 +36,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_Categorie = new System.Windows.Forms.TextBox();
-            this.txt_DateMiseService = new System.Windows.Forms.TextBox();
             this.txt_Immatriculation = new System.Windows.Forms.TextBox();
             this.txt_Loueur = new System.Windows.Forms.TextBox();
             this.txt_NomVoiture = new System.Windows.Forms.TextBox();
@@ -45,6 +44,9 @@
             this.rb_Non = new System.Windows.Forms.RadioButton();
             this.btn_Ajouter = new System.Windows.Forms.Button();
             this.btn_Fermer = new System.Windows.Forms.Button();
+            this.txt_dateMiseEnService = new System.Windows.Forms.DateTimePicker();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -117,13 +119,6 @@
             this.txt_Categorie.Size = new System.Drawing.Size(100, 20);
             this.txt_Categorie.TabIndex = 7;
             // 
-            // txt_DateMiseService
-            // 
-            this.txt_DateMiseService.Location = new System.Drawing.Point(290, 69);
-            this.txt_DateMiseService.Name = "txt_DateMiseService";
-            this.txt_DateMiseService.Size = new System.Drawing.Size(100, 20);
-            this.txt_DateMiseService.TabIndex = 8;
-            // 
             // txt_Immatriculation
             // 
             this.txt_Immatriculation.Location = new System.Drawing.Point(290, 146);
@@ -155,7 +150,7 @@
             // rb_Oui
             // 
             this.rb_Oui.AutoSize = true;
-            this.rb_Oui.Location = new System.Drawing.Point(263, 105);
+            this.rb_Oui.Location = new System.Drawing.Point(24, 15);
             this.rb_Oui.Name = "rb_Oui";
             this.rb_Oui.Size = new System.Drawing.Size(41, 17);
             this.rb_Oui.TabIndex = 13;
@@ -166,7 +161,7 @@
             // rb_Non
             // 
             this.rb_Non.AutoSize = true;
-            this.rb_Non.Location = new System.Drawing.Point(375, 105);
+            this.rb_Non.Location = new System.Drawing.Point(131, 17);
             this.rb_Non.Name = "rb_Non";
             this.rb_Non.Size = new System.Drawing.Size(45, 17);
             this.rb_Non.TabIndex = 14;
@@ -182,6 +177,7 @@
             this.btn_Ajouter.TabIndex = 15;
             this.btn_Ajouter.Text = "Ajouter";
             this.btn_Ajouter.UseVisualStyleBackColor = true;
+            this.btn_Ajouter.Click += new System.EventHandler(this.btn_Ajouter_Click);
             // 
             // btn_Fermer
             // 
@@ -193,20 +189,36 @@
             this.btn_Fermer.UseVisualStyleBackColor = true;
             this.btn_Fermer.Click += new System.EventHandler(this.btn_Fermer_Click);
             // 
+            // txt_dateMiseEnService
+            // 
+            this.txt_dateMiseEnService.Location = new System.Drawing.Point(290, 69);
+            this.txt_dateMiseEnService.Name = "txt_dateMiseEnService";
+            this.txt_dateMiseEnService.Size = new System.Drawing.Size(200, 20);
+            this.txt_dateMiseEnService.TabIndex = 17;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rb_Non);
+            this.groupBox1.Controls.Add(this.rb_Oui);
+            this.groupBox1.Location = new System.Drawing.Point(280, 86);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 40);
+            this.groupBox1.TabIndex = 18;
+            this.groupBox1.TabStop = false;
+            // 
             // AjouterUneVoiture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(621, 398);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.txt_dateMiseEnService);
             this.Controls.Add(this.btn_Fermer);
             this.Controls.Add(this.btn_Ajouter);
-            this.Controls.Add(this.rb_Non);
-            this.Controls.Add(this.rb_Oui);
             this.Controls.Add(this.txt_Puissance);
             this.Controls.Add(this.txt_NomVoiture);
             this.Controls.Add(this.txt_Loueur);
             this.Controls.Add(this.txt_Immatriculation);
-            this.Controls.Add(this.txt_DateMiseService);
             this.Controls.Add(this.txt_Categorie);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -217,6 +229,8 @@
             this.Controls.Add(this.label1);
             this.Name = "AjouterUneVoiture";
             this.Text = "Ajouter Une Voiture";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,7 +246,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txt_Categorie;
-        private System.Windows.Forms.TextBox txt_DateMiseService;
         private System.Windows.Forms.TextBox txt_Immatriculation;
         private System.Windows.Forms.TextBox txt_Loueur;
         private System.Windows.Forms.TextBox txt_NomVoiture;
@@ -241,5 +254,7 @@
         private System.Windows.Forms.RadioButton rb_Non;
         private System.Windows.Forms.Button btn_Ajouter;
         private System.Windows.Forms.Button btn_Fermer;
+        private System.Windows.Forms.DateTimePicker txt_dateMiseEnService;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

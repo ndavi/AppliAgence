@@ -75,9 +75,16 @@ namespace Metier
         {
 
         }
-        public Voiture(String nom)
+        public Voiture(String nom,String categorie,Double puissance,String immatriculation,Boolean estLouee,DateTime dateMiseEnService)
         {
             this.nom = nom;
+            this.categorie = categorie;
+            this.puissance = puissance;
+            this.immatriculation = immatriculation;
+            this.estLouee = estLouee;
+            this.Loueur = new Personne();
+            this.dateMiseService = dateMiseEnService;
+
         }
 
     }

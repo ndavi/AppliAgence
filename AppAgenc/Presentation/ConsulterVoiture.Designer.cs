@@ -34,8 +34,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cbx_NomPersonne = new System.Windows.Forms.ComboBox();
             this.cbx_TrierPersonne = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgv = new System.Windows.Forms.DataGridView();
+            this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Immatriculation = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Puissance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datemiseService = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.louee = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Femer
@@ -92,20 +98,68 @@
             this.cbx_TrierPersonne.Size = new System.Drawing.Size(121, 21);
             this.cbx_TrierPersonne.TabIndex = 5;
             // 
-            // dataGridView1
+            // dgv
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 131);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(638, 258);
-            this.dataGridView1.TabIndex = 6;
+            this.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Nom,
+            this.Immatriculation,
+            this.Puissance,
+            this.datemiseService,
+            this.Type,
+            this.louee});
+            this.dgv.Location = new System.Drawing.Point(12, 131);
+            this.dgv.MultiSelect = false;
+            this.dgv.Name = "dgv";
+            this.dgv.ReadOnly = true;
+            this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv.Size = new System.Drawing.Size(685, 258);
+            this.dgv.TabIndex = 6;
+            // 
+            // Nom
+            // 
+            this.Nom.HeaderText = "Nom";
+            this.Nom.Name = "Nom";
+            this.Nom.ReadOnly = true;
+            // 
+            // Immatriculation
+            // 
+            this.Immatriculation.HeaderText = "Immatriculation";
+            this.Immatriculation.Name = "Immatriculation";
+            this.Immatriculation.ReadOnly = true;
+            // 
+            // Puissance
+            // 
+            this.Puissance.HeaderText = "Puissance";
+            this.Puissance.Name = "Puissance";
+            this.Puissance.ReadOnly = true;
+            // 
+            // datemiseService
+            // 
+            this.datemiseService.HeaderText = "Date de mise en service";
+            this.datemiseService.Name = "datemiseService";
+            this.datemiseService.ReadOnly = true;
+            // 
+            // Type
+            // 
+            this.Type.HeaderText = "Type";
+            this.Type.Name = "Type";
+            this.Type.ReadOnly = true;
+            // 
+            // louee
+            // 
+            this.louee.HeaderText = "Louée";
+            this.louee.Name = "louee";
+            this.louee.ReadOnly = true;
             // 
             // ConsulterVoiture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(709, 429);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv);
             this.Controls.Add(this.cbx_TrierPersonne);
             this.Controls.Add(this.cbx_NomPersonne);
             this.Controls.Add(this.label3);
@@ -114,7 +168,7 @@
             this.Controls.Add(this.btn_Femer);
             this.Name = "ConsulterVoiture";
             this.Text = "ConsulterVoiture";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -128,6 +182,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbx_NomPersonne;
         private System.Windows.Forms.ComboBox cbx_TrierPersonne;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Immatriculation;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Puissance;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datemiseService;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn louee;
     }
 }
