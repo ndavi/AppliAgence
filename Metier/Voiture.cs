@@ -77,7 +77,7 @@ namespace Metier
         }
         public Voiture(String nom)
         {
-
+            this.nom = nom;
         }
 
     }

@@ -44,6 +44,8 @@
             this.consultationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toutesLesVoituresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toutesLesPersonnesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chargerUneSauvegardeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sauvegarderLesDonnéesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,6 +64,8 @@
             // fichierToolStripMenuItem
             // 
             this.fichierToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.chargerUneSauvegardeToolStripMenuItem,
+            this.sauvegarderLesDonnéesToolStripMenuItem,
             this.quitterToolStripMenuItem});
             this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
             this.fichierToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
@@ -70,7 +74,7 @@
             // quitterToolStripMenuItem
             // 
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
             this.quitterToolStripMenuItem.Text = "Quitter";
             this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
@@ -90,7 +94,7 @@
             this.ajouterToolStripMenuItem,
             this.supprimerUneVoitureToolStripMenuItem});
             this.voituresToolStripMenuItem.Name = "voituresToolStripMenuItem";
-            this.voituresToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.voituresToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.voituresToolStripMenuItem.Text = "Voitures";
             // 
             // ajouterToolStripMenuItem
@@ -111,7 +115,7 @@
             this.ajouterUnePersonneToolStripMenuItem,
             this.supprimerUnePersonneToolStripMenuItem});
             this.personnesToolStripMenuItem.Name = "personnesToolStripMenuItem";
-            this.personnesToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.personnesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.personnesToolStripMenuItem.Text = "Personnes";
             // 
             // ajouterUnePersonneToolStripMenuItem
@@ -132,7 +136,7 @@
             this.ajouterToolStripMenuItem1,
             this.rendreUneVoitureToolStripMenuItem});
             this.locationsToolStripMenuItem.Name = "locationsToolStripMenuItem";
-            this.locationsToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.locationsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.locationsToolStripMenuItem.Text = "Locations";
             // 
             // ajouterToolStripMenuItem1
@@ -168,6 +172,20 @@
             this.toutesLesPersonnesToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.toutesLesPersonnesToolStripMenuItem.Text = "Toutes les personnes";
             // 
+            // chargerUneSauvegardeToolStripMenuItem
+            // 
+            this.chargerUneSauvegardeToolStripMenuItem.Name = "chargerUneSauvegardeToolStripMenuItem";
+            this.chargerUneSauvegardeToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.chargerUneSauvegardeToolStripMenuItem.Text = "Charger une Sauvegarde";
+            this.chargerUneSauvegardeToolStripMenuItem.Click += new System.EventHandler(this.chargerUneSauvegardeToolStripMenuItem_Click);
+            // 
+            // sauvegarderLesDonnéesToolStripMenuItem
+            // 
+            this.sauvegarderLesDonnéesToolStripMenuItem.Name = "sauvegarderLesDonnéesToolStripMenuItem";
+            this.sauvegarderLesDonnéesToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.sauvegarderLesDonnéesToolStripMenuItem.Text = "Sauvegarder les Données";
+            this.sauvegarderLesDonnéesToolStripMenuItem.Click += new System.EventHandler(this.sauvegarderLesDonnéesToolStripMenuItem_Click);
+            // 
             // Acceuil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -202,6 +220,8 @@
         private System.Windows.Forms.ToolStripMenuItem rendreUneVoitureToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toutesLesVoituresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toutesLesPersonnesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem chargerUneSauvegardeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sauvegarderLesDonnéesToolStripMenuItem;
     }
 }
 

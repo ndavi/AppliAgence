@@ -63,12 +63,6 @@
     <Compile Include="Presentation\AjouterUneVoiture.designer.cs">
       <DependentUpon>AjouterUneVoiture.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\ConsulterPersonnecs.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentation\ConsulterPersonnecs.Designer.cs">
-      <DependentUpon>ConsulterPersonnecs.cs</DependentUpon>
-    </Compile>
     <Compile Include="Presentation\ConsulterVoiture.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,9 +102,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\AjouterUneVoiture.resx">
       <DependentUpon>AjouterUneVoiture.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\ConsulterPersonnecs.resx">
-      <DependentUpon>ConsulterPersonnecs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\ConsulterVoiture.resx">
       <DependentUpon>ConsulterVoiture.cs</DependentUpon>
