@@ -37,3 +37,4 @@ C:\Users\ndavi\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.exe
 C:\Users\ndavi\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.pdb
 C:\Users\ndavi\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.Presentation.ConsulterVoiture.resources
 C:\Users\ndavi\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.Presentation.Acceuil.resources
+C:\Users\ndavi\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.Presentation.ConsultationPersonne.resources
