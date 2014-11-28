@@ -21,7 +21,6 @@ D:\SI7\AppliAgence\AppAgenc\obj\Debug\AppAgenc.csproj.GenerateResource.Cache
 D:\SI7\AppliAgence\AppAgenc\obj\Debug\AppAgenc.exe
 D:\SI7\AppliAgence\AppAgenc\obj\Debug\AppAgenc.pdb
 C:\Users\ndavi\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.csprojResolveAssemblyReference.cache
-C:\Users\ndavi\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.Acceuil.resources
 C:\Users\ndavi\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.Presentation.AjouterUnePersonne.resources
 C:\Users\ndavi\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.Presentation.AjouterUneVoiture.resources
 C:\Users\ndavi\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.Presentation.LouerVoiture.resources
@@ -37,3 +36,4 @@ C:\Users\ndavi\Source\Repos\AppliAgence\AppAgenc\bin\Debug\Metier.pdb
 C:\Users\ndavi\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.exe
 C:\Users\ndavi\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.pdb
 C:\Users\ndavi\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.Presentation.ConsulterVoiture.resources
+C:\Users\ndavi\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.Presentation.Acceuil.resources

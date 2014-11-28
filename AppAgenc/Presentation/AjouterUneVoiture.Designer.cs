@@ -37,7 +37,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txt_Categorie = new System.Windows.Forms.TextBox();
             this.txt_Immatriculation = new System.Windows.Forms.TextBox();
-            this.txt_Loueur = new System.Windows.Forms.TextBox();
             this.txt_NomVoiture = new System.Windows.Forms.TextBox();
             this.txt_Puissance = new System.Windows.Forms.TextBox();
             this.rb_Oui = new System.Windows.Forms.RadioButton();
@@ -46,6 +45,7 @@
             this.btn_Fermer = new System.Windows.Forms.Button();
             this.txt_dateMiseEnService = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cb_loueur = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -126,13 +126,6 @@
             this.txt_Immatriculation.Size = new System.Drawing.Size(100, 20);
             this.txt_Immatriculation.TabIndex = 9;
             // 
-            // txt_Loueur
-            // 
-            this.txt_Loueur.Location = new System.Drawing.Point(290, 190);
-            this.txt_Loueur.Name = "txt_Loueur";
-            this.txt_Loueur.Size = new System.Drawing.Size(100, 20);
-            this.txt_Loueur.TabIndex = 10;
-            // 
             // txt_NomVoiture
             // 
             this.txt_NomVoiture.Location = new System.Drawing.Point(290, 238);
@@ -206,18 +199,26 @@
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             // 
+            // cb_loueur
+            // 
+            this.cb_loueur.FormattingEnabled = true;
+            this.cb_loueur.Location = new System.Drawing.Point(290, 184);
+            this.cb_loueur.Name = "cb_loueur";
+            this.cb_loueur.Size = new System.Drawing.Size(121, 21);
+            this.cb_loueur.TabIndex = 19;
+            // 
             // AjouterUneVoiture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(621, 398);
+            this.Controls.Add(this.cb_loueur);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txt_dateMiseEnService);
             this.Controls.Add(this.btn_Fermer);
             this.Controls.Add(this.btn_Ajouter);
             this.Controls.Add(this.txt_Puissance);
             this.Controls.Add(this.txt_NomVoiture);
-            this.Controls.Add(this.txt_Loueur);
             this.Controls.Add(this.txt_Immatriculation);
             this.Controls.Add(this.txt_Categorie);
             this.Controls.Add(this.label7);
@@ -247,7 +248,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txt_Categorie;
         private System.Windows.Forms.TextBox txt_Immatriculation;
-        private System.Windows.Forms.TextBox txt_Loueur;
         private System.Windows.Forms.TextBox txt_NomVoiture;
         private System.Windows.Forms.TextBox txt_Puissance;
         private System.Windows.Forms.RadioButton rb_Oui;
@@ -256,5 +256,6 @@
         private System.Windows.Forms.Button btn_Fermer;
         private System.Windows.Forms.DateTimePicker txt_dateMiseEnService;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ComboBox cb_loueur;
     }
 }

@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Metier;
 
-namespace AppAgenc
+namespace AppAgenc.Presentation
 {
     public partial class Acceuil : Form
     {
-        private static Agence uneAgence;
+        private static Agence uneAgence = new Agence();
         public static Agence UneAgence
         {
             get { return Acceuil.uneAgence; }
@@ -39,6 +39,24 @@ namespace AppAgenc
         {
             Serialisation serializer = new Serialisation();
             uneAgence = serializer.importXml();
+        }
+
+        private void ajouterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AjouterUneVoiture ajouterVoiture = new AjouterUneVoiture();
+            ajouterVoiture.Show();
+        }
+
+        private void toutesLesVoituresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsulterVoiture consulterVoiture = new ConsulterVoiture();
+            consulterVoiture.Show();
+        }
+
+        private void ajouterUnePersonneToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AjouterUnePersonne ajPersonne = new AjouterUnePersonne();
+            ajPersonne.Show();
         }
 
     }

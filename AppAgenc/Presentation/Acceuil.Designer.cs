@@ -1,4 +1,4 @@
-﻿namespace AppAgenc
+﻿namespace AppAgenc.Presentation
 {
     partial class Acceuil
     {
@@ -30,6 +30,8 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chargerUneSauvegardeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sauvegarderLesDonnéesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gérerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.voituresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,8 +46,6 @@
             this.consultationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toutesLesVoituresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toutesLesPersonnesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.chargerUneSauvegardeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sauvegarderLesDonnéesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,6 +70,20 @@
             this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
             this.fichierToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.fichierToolStripMenuItem.Text = "Fichier";
+            // 
+            // chargerUneSauvegardeToolStripMenuItem
+            // 
+            this.chargerUneSauvegardeToolStripMenuItem.Name = "chargerUneSauvegardeToolStripMenuItem";
+            this.chargerUneSauvegardeToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.chargerUneSauvegardeToolStripMenuItem.Text = "Charger une Sauvegarde";
+            this.chargerUneSauvegardeToolStripMenuItem.Click += new System.EventHandler(this.chargerUneSauvegardeToolStripMenuItem_Click);
+            // 
+            // sauvegarderLesDonnéesToolStripMenuItem
+            // 
+            this.sauvegarderLesDonnéesToolStripMenuItem.Name = "sauvegarderLesDonnéesToolStripMenuItem";
+            this.sauvegarderLesDonnéesToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.sauvegarderLesDonnéesToolStripMenuItem.Text = "Sauvegarder les Données";
+            this.sauvegarderLesDonnéesToolStripMenuItem.Click += new System.EventHandler(this.sauvegarderLesDonnéesToolStripMenuItem_Click);
             // 
             // quitterToolStripMenuItem
             // 
@@ -102,6 +116,7 @@
             this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
             this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.ajouterToolStripMenuItem.Text = "Ajouter une voiture";
+            this.ajouterToolStripMenuItem.Click += new System.EventHandler(this.ajouterToolStripMenuItem_Click);
             // 
             // supprimerUneVoitureToolStripMenuItem
             // 
@@ -123,6 +138,7 @@
             this.ajouterUnePersonneToolStripMenuItem.Name = "ajouterUnePersonneToolStripMenuItem";
             this.ajouterUnePersonneToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.ajouterUnePersonneToolStripMenuItem.Text = "Ajouter une personne";
+            this.ajouterUnePersonneToolStripMenuItem.Click += new System.EventHandler(this.ajouterUnePersonneToolStripMenuItem_Click);
             // 
             // supprimerUnePersonneToolStripMenuItem
             // 
@@ -165,26 +181,13 @@
             this.toutesLesVoituresToolStripMenuItem.Name = "toutesLesVoituresToolStripMenuItem";
             this.toutesLesVoituresToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.toutesLesVoituresToolStripMenuItem.Text = "Toutes les voitures";
+            this.toutesLesVoituresToolStripMenuItem.Click += new System.EventHandler(this.toutesLesVoituresToolStripMenuItem_Click);
             // 
             // toutesLesPersonnesToolStripMenuItem
             // 
             this.toutesLesPersonnesToolStripMenuItem.Name = "toutesLesPersonnesToolStripMenuItem";
             this.toutesLesPersonnesToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.toutesLesPersonnesToolStripMenuItem.Text = "Toutes les personnes";
-            // 
-            // chargerUneSauvegardeToolStripMenuItem
-            // 
-            this.chargerUneSauvegardeToolStripMenuItem.Name = "chargerUneSauvegardeToolStripMenuItem";
-            this.chargerUneSauvegardeToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
-            this.chargerUneSauvegardeToolStripMenuItem.Text = "Charger une Sauvegarde";
-            this.chargerUneSauvegardeToolStripMenuItem.Click += new System.EventHandler(this.chargerUneSauvegardeToolStripMenuItem_Click);
-            // 
-            // sauvegarderLesDonnéesToolStripMenuItem
-            // 
-            this.sauvegarderLesDonnéesToolStripMenuItem.Name = "sauvegarderLesDonnéesToolStripMenuItem";
-            this.sauvegarderLesDonnéesToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
-            this.sauvegarderLesDonnéesToolStripMenuItem.Text = "Sauvegarder les Données";
-            this.sauvegarderLesDonnéesToolStripMenuItem.Click += new System.EventHandler(this.sauvegarderLesDonnéesToolStripMenuItem_Click);
             // 
             // Acceuil
             // 
