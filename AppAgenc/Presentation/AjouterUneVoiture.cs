@@ -29,6 +29,7 @@ namespace AppAgenc.Presentation
                 Convert.ToDouble(txt_Puissance.Text), txt_Immatriculation.Text,
                 rb_Oui.Checked, txt_dateMiseEnService.Value);
             Acceuil.UneAgence.AjouterVoiture(uneVoiture);
+            this.Close();
         }
     }
 }

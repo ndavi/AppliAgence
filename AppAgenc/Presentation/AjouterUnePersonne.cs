@@ -23,5 +23,12 @@ namespace AppAgenc.Presentation
         {
             this.Close();
         }
+
+        private void btn_Ajouter_Click(object sender, EventArgs e)
+        {
+            Personne unePersonne = new Personne(txt_Nom.Text, txt_Prenom.Text, txt_Ville.Text);
+            Acceuil.UneAgence.AjouterPersonne(unePersonne);
+            this.Close();
+        }
     }
 }
