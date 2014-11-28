@@ -51,6 +51,7 @@
             this.cbb_Voitures.Name = "cbb_Voitures";
             this.cbb_Voitures.Size = new System.Drawing.Size(121, 21);
             this.cbb_Voitures.TabIndex = 1;
+            this.cbb_Voitures.SelectedIndexChanged += new System.EventHandler(this.cbb_Voitures_SelectedIndexChanged);
             // 
             // label2
             // 

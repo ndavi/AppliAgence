@@ -53,6 +53,7 @@
             this.btn_Supprimer.TabIndex = 1;
             this.btn_Supprimer.Text = "Supprimer";
             this.btn_Supprimer.UseVisualStyleBackColor = true;
+            this.btn_Supprimer.Click += new System.EventHandler(this.btn_Supprimer_Click);
             // 
             // cbb_Personnes
             // 
@@ -61,6 +62,7 @@
             this.cbb_Personnes.Name = "cbb_Personnes";
             this.cbb_Personnes.Size = new System.Drawing.Size(121, 21);
             this.cbb_Personnes.TabIndex = 2;
+            this.cbb_Personnes.SelectedIndexChanged += new System.EventHandler(this.cbb_Personnes_SelectedIndexChanged);
             // 
             // label1
             // 

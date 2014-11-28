@@ -53,6 +53,7 @@
             this.btn_Femer.TabIndex = 0;
             this.btn_Femer.Text = "Femer";
             this.btn_Femer.UseVisualStyleBackColor = true;
+            this.btn_Femer.Click += new System.EventHandler(this.btn_Femer_Click);
             // 
             // label1
             // 

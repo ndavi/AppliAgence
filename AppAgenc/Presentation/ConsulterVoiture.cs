@@ -24,5 +24,10 @@ namespace AppAgenc.Presentation
             }
         }
 
+        private void btn_Femer_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }

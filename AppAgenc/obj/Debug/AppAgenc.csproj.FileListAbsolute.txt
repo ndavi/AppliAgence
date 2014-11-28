@@ -55,3 +55,4 @@ M:\yhamo\ProjetVoiture\AppliAgence\AppAgenc\obj\Debug\AppAgenc.Properties.Resour
 M:\yhamo\ProjetVoiture\AppliAgence\AppAgenc\obj\Debug\AppAgenc.csproj.GenerateResource.Cache
 M:\yhamo\ProjetVoiture\AppliAgence\AppAgenc\obj\Debug\AppAgenc.exe
 M:\yhamo\ProjetVoiture\AppliAgence\AppAgenc\obj\Debug\AppAgenc.pdb
+M:\yhamo\ProjetVoiture\AppliAgence\AppAgenc\obj\Debug\AppAgenc.Presentation.ConsultationPersonne.resources
