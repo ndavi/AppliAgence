@@ -16,10 +16,6 @@ namespace AppAgenc.Presentation
         public AjouterUneVoiture()
         {
             InitializeComponent();
-            foreach (Personne personne in Acceuil.UneAgence.LesPersonnes)
-            {
-                cb_loueur.Items.Add(personne.Nom);
-            }
         }
 
         private void btn_Fermer_Click(object sender, EventArgs e)
@@ -34,6 +30,11 @@ namespace AppAgenc.Presentation
                 rb_Oui.Checked, txt_dateMiseEnService.Value);
             Acceuil.UneAgence.AjouterVoiture(voiture);
             this.Close();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

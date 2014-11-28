@@ -112,7 +112,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "LouerVoiture";
-            this.Text = "LouerVoiture";
+            this.Text = " Location d\'une voiture";
             this.ResumeLayout(false);
             this.PerformLayout();
 

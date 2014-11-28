@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Presentation\ConsultationPersonne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\ConsultationPersonne.Designer.cs">
+      <DependentUpon>ConsultationPersonne.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\Acceuil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,9 @@
       <DependentUpon>SupprimerUneVoiture.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Presentation\ConsultationPersonne.resx">
+      <DependentUpon>ConsultationPersonne.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Acceuil.resx">
       <DependentUpon>Acceuil.cs</DependentUpon>
     </EmbeddedResource>

@@ -59,5 +59,35 @@ namespace AppAgenc.Presentation
             ajPersonne.Show();
         }
 
+        private void ajouterToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            LouerVoiture uneloc = new LouerVoiture();
+            uneloc.Show();
+        }
+
+        private void rendreUneVoitureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RendreVoiture Rendre = new RendreVoiture();
+            Rendre.Show();
+        }
+
+        private void supprimerUnePersonneToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SupprimerUnePersonne uneSupPer = new SupprimerUnePersonne();
+            uneSupPer.Show();
+        }
+
+        private void supprimerUneVoitureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SupprimerUneVoiture supuneVoit = new SupprimerUneVoiture();
+            supuneVoit.Show();
+        }
+
+        private void toutesLesPersonnesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultationPersonne uneConsPers = new ConsultationPersonne();
+            uneConsPers.Show();
+        }
+
     }
 }

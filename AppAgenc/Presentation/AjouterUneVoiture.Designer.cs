@@ -32,7 +32,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_Categorie = new System.Windows.Forms.TextBox();
@@ -45,7 +44,6 @@
             this.btn_Fermer = new System.Windows.Forms.Button();
             this.txt_dateMiseEnService = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cb_loueur = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,28 +83,20 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Plaque d\'immatriculation :";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(155, 193);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Loueur  :";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(113, 238);
+            this.label6.Location = new System.Drawing.Point(103, 206);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(94, 13);
             this.label6.TabIndex = 5;
             this.label6.Text = "nom de la voiture :";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(91, 289);
+            this.label7.Location = new System.Drawing.Point(89, 252);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(118, 13);
             this.label7.TabIndex = 6;
@@ -128,14 +118,14 @@
             // 
             // txt_NomVoiture
             // 
-            this.txt_NomVoiture.Location = new System.Drawing.Point(290, 238);
+            this.txt_NomVoiture.Location = new System.Drawing.Point(290, 206);
             this.txt_NomVoiture.Name = "txt_NomVoiture";
             this.txt_NomVoiture.Size = new System.Drawing.Size(100, 20);
             this.txt_NomVoiture.TabIndex = 11;
             // 
             // txt_Puissance
             // 
-            this.txt_Puissance.Location = new System.Drawing.Point(280, 289);
+            this.txt_Puissance.Location = new System.Drawing.Point(290, 249);
             this.txt_Puissance.Name = "txt_Puissance";
             this.txt_Puissance.Size = new System.Drawing.Size(100, 20);
             this.txt_Puissance.TabIndex = 12;
@@ -199,20 +189,11 @@
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             // 
-            // cb_loueur
-            // 
-            this.cb_loueur.FormattingEnabled = true;
-            this.cb_loueur.Location = new System.Drawing.Point(290, 184);
-            this.cb_loueur.Name = "cb_loueur";
-            this.cb_loueur.Size = new System.Drawing.Size(121, 21);
-            this.cb_loueur.TabIndex = 19;
-            // 
             // AjouterUneVoiture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(621, 398);
-            this.Controls.Add(this.cb_loueur);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txt_dateMiseEnService);
             this.Controls.Add(this.btn_Fermer);
@@ -223,7 +204,6 @@
             this.Controls.Add(this.txt_Categorie);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -243,7 +223,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txt_Categorie;
@@ -256,6 +235,5 @@
         private System.Windows.Forms.Button btn_Fermer;
         private System.Windows.Forms.DateTimePicker txt_dateMiseEnService;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox cb_loueur;
     }
 }
