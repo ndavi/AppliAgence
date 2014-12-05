@@ -27,7 +27,7 @@ namespace AppAgenc.Presentation
         {
             Voiture voiture = new Voiture(txt_NomVoiture.Text, txt_Categorie.Text,
                 Convert.ToDouble(txt_Puissance.Text), txt_Immatriculation.Text,
-                rb_Oui.Checked, txt_dateMiseEnService.Value);
+                rb_Oui.Checked, Convert.ToDateTime(txt_dateMiseEnService.Value.Year + "/" + txt_dateMiseEnService.Value.Month + "/" +txt_dateMiseEnService.Value.Day));
             Acceuil.UneAgence.AjouterVoiture(voiture);
             this.Close();
         }

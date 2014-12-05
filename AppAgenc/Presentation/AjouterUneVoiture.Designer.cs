@@ -178,6 +178,7 @@
             this.txt_dateMiseEnService.Name = "txt_dateMiseEnService";
             this.txt_dateMiseEnService.Size = new System.Drawing.Size(200, 20);
             this.txt_dateMiseEnService.TabIndex = 17;
+            this.txt_dateMiseEnService.Value = new System.DateTime(2014, 11, 28, 0, 0, 0, 0);
             // 
             // groupBox1
             // 
