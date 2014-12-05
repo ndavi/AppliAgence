@@ -11,10 +11,18 @@ namespace Metier
     public class Personne
     {
         #region Attributs
+        private int id;
         private string nom, prenom, ville;
         #endregion
 
         #region Getteur and setteur
+        [DataMember]
+        [XmlElement("Id")]
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
         [DataMember]
         [XmlElement("Ville")]
 

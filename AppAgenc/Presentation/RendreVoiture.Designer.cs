@@ -32,7 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btn_Fermer = new System.Windows.Forms.Button();
             this.btn_Valider = new System.Windows.Forms.Button();
-            this.cbb_Voitures = new System.Windows.Forms.ComboBox();
+            this.cb_Voitures = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -72,21 +72,22 @@
             this.btn_Valider.TabIndex = 3;
             this.btn_Valider.Text = "Valider";
             this.btn_Valider.UseVisualStyleBackColor = true;
+            this.btn_Valider.Click += new System.EventHandler(this.btn_Valider_Click);
             // 
-            // cbb_Voitures
+            // cb_Voitures
             // 
-            this.cbb_Voitures.FormattingEnabled = true;
-            this.cbb_Voitures.Location = new System.Drawing.Point(220, 126);
-            this.cbb_Voitures.Name = "cbb_Voitures";
-            this.cbb_Voitures.Size = new System.Drawing.Size(121, 21);
-            this.cbb_Voitures.TabIndex = 4;
+            this.cb_Voitures.FormattingEnabled = true;
+            this.cb_Voitures.Location = new System.Drawing.Point(220, 126);
+            this.cb_Voitures.Name = "cb_Voitures";
+            this.cb_Voitures.Size = new System.Drawing.Size(121, 21);
+            this.cb_Voitures.TabIndex = 4;
             // 
             // RendreVoiture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(401, 262);
-            this.Controls.Add(this.cbb_Voitures);
+            this.Controls.Add(this.cb_Voitures);
             this.Controls.Add(this.btn_Valider);
             this.Controls.Add(this.btn_Fermer);
             this.Controls.Add(this.label2);
@@ -104,6 +105,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_Fermer;
         private System.Windows.Forms.Button btn_Valider;
-        private System.Windows.Forms.ComboBox cbb_Voitures;
+        private System.Windows.Forms.ComboBox cb_Voitures;
     }
 }

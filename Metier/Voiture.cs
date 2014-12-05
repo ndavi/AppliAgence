@@ -57,7 +57,7 @@ namespace Metier
         }
         [DataMember]
         [XmlElement("Loueur",typeof(Personne))]
-        internal Personne Loueur
+        public Personne Loueur
         {
             get { return loueur; }
             set { loueur = value; }

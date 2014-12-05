@@ -80,6 +80,7 @@
             this.btn_Ajouter.TabIndex = 4;
             this.btn_Ajouter.Text = "Ajouter";
             this.btn_Ajouter.UseVisualStyleBackColor = true;
+            this.btn_Ajouter.Click += new System.EventHandler(this.btn_Ajouter_Click);
             // 
             // SupprimerUneVoiture
             // 

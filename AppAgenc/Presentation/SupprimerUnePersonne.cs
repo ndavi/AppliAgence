@@ -16,6 +16,10 @@ namespace AppAgenc.Presentation
         public SupprimerUnePersonne()
         {
             InitializeComponent();
+            foreach (Personne unePersonne in Acceuil.UneAgence.LesPersonnes)
+            {
+                cbb_Personnes.Items.Add(unePersonne.Nom);
+            }
         }
 
         private void btn_Fermer_Click(object sender, EventArgs e)
@@ -23,19 +27,12 @@ namespace AppAgenc.Presentation
             this.Close();
         }
 
-        private void cbb_Personnes_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            foreach (Personne unePersonne in Acceuil.UneAgence.LesPersonnes)
-            {
-                cbb_Personnes.Items.Add(" " + unePersonne.Nom);
-                
-            }
-        }
-
         private void btn_Supprimer_Click(object sender, EventArgs e)
         {
-            string saisie = cbb_Personnes.Text;
-            //Acceuil.UneAgence.supprimerPersonne(saisie);
+            Object personneSelected = cbb_Personnes.SelectedItem;
+            Personne laPersonne = Acceuil.UneAgence.LesPersonnes.Find(x => x.Nom == Convert.ToString(personneSelected));
+            Acceuil.UneAgence.LesPersonnes.Remove(laPersonne);
+            this.Close();
         }
     }
 }

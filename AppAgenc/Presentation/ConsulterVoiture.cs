@@ -18,9 +18,14 @@ namespace AppAgenc.Presentation
             InitializeComponent();
             foreach (Voiture uneVoiture in Acceuil.UneAgence.ParcVoitures)
             {
+                String loueur;
+                if (uneVoiture.EstLouee)
+                    loueur = uneVoiture.Loueur.Nom;
+                else
+                    loueur = "Aucun loueur";
                 dgv.Rows.Add(uneVoiture.Nom, uneVoiture.Immatriculation,
                     uneVoiture.Puissance, uneVoiture.DateMiseService,
-                    uneVoiture.Categorie, uneVoiture.EstLouee);
+                    uneVoiture.Categorie, loueur);
             }
         }
 

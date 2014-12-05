@@ -31,8 +31,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.cbb_Voitures = new System.Windows.Forms.ComboBox();
-            this.cbb_Personnes = new System.Windows.Forms.ComboBox();
+            this.cb_Voitures = new System.Windows.Forms.ComboBox();
+            this.cb_Personnes = new System.Windows.Forms.ComboBox();
             this.btn_Fermer = new System.Windows.Forms.Button();
             this.btn_Valider = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -64,21 +64,21 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Personne :";
             // 
-            // cbb_Voitures
+            // cb_Voitures
             // 
-            this.cbb_Voitures.FormattingEnabled = true;
-            this.cbb_Voitures.Location = new System.Drawing.Point(161, 114);
-            this.cbb_Voitures.Name = "cbb_Voitures";
-            this.cbb_Voitures.Size = new System.Drawing.Size(121, 21);
-            this.cbb_Voitures.TabIndex = 3;
+            this.cb_Voitures.FormattingEnabled = true;
+            this.cb_Voitures.Location = new System.Drawing.Point(161, 114);
+            this.cb_Voitures.Name = "cb_Voitures";
+            this.cb_Voitures.Size = new System.Drawing.Size(121, 21);
+            this.cb_Voitures.TabIndex = 3;
             // 
-            // cbb_Personnes
+            // cb_Personnes
             // 
-            this.cbb_Personnes.FormattingEnabled = true;
-            this.cbb_Personnes.Location = new System.Drawing.Point(161, 172);
-            this.cbb_Personnes.Name = "cbb_Personnes";
-            this.cbb_Personnes.Size = new System.Drawing.Size(121, 21);
-            this.cbb_Personnes.TabIndex = 4;
+            this.cb_Personnes.FormattingEnabled = true;
+            this.cb_Personnes.Location = new System.Drawing.Point(161, 172);
+            this.cb_Personnes.Name = "cb_Personnes";
+            this.cb_Personnes.Size = new System.Drawing.Size(121, 21);
+            this.cb_Personnes.TabIndex = 4;
             // 
             // btn_Fermer
             // 
@@ -98,6 +98,7 @@
             this.btn_Valider.TabIndex = 6;
             this.btn_Valider.Text = "Valider";
             this.btn_Valider.UseVisualStyleBackColor = true;
+            this.btn_Valider.Click += new System.EventHandler(this.btn_Valider_Click);
             // 
             // LouerVoiture
             // 
@@ -106,8 +107,8 @@
             this.ClientSize = new System.Drawing.Size(404, 296);
             this.Controls.Add(this.btn_Valider);
             this.Controls.Add(this.btn_Fermer);
-            this.Controls.Add(this.cbb_Personnes);
-            this.Controls.Add(this.cbb_Voitures);
+            this.Controls.Add(this.cb_Personnes);
+            this.Controls.Add(this.cb_Voitures);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -123,8 +124,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cbb_Voitures;
-        private System.Windows.Forms.ComboBox cbb_Personnes;
+        private System.Windows.Forms.ComboBox cb_Voitures;
+        private System.Windows.Forms.ComboBox cb_Personnes;
         private System.Windows.Forms.Button btn_Fermer;
         private System.Windows.Forms.Button btn_Valider;
     }
