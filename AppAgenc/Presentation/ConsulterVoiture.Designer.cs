@@ -30,10 +30,6 @@
         {
             this.btn_Femer = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cbx_NomPersonne = new System.Windows.Forms.ComboBox();
-            this.cbx_TrierPersonne = new System.Windows.Forms.ComboBox();
             this.dgv = new System.Windows.Forms.DataGridView();
             this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Immatriculation = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,40 +60,6 @@
             this.label1.Size = new System.Drawing.Size(225, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Affichage des voitures";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(48, 94);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Nom de la personne : ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(324, 94);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Trier sur : ";
-            // 
-            // cbx_NomPersonne
-            // 
-            this.cbx_NomPersonne.FormattingEnabled = true;
-            this.cbx_NomPersonne.Location = new System.Drawing.Point(165, 91);
-            this.cbx_NomPersonne.Name = "cbx_NomPersonne";
-            this.cbx_NomPersonne.Size = new System.Drawing.Size(121, 21);
-            this.cbx_NomPersonne.TabIndex = 4;
-            // 
-            // cbx_TrierPersonne
-            // 
-            this.cbx_TrierPersonne.FormattingEnabled = true;
-            this.cbx_TrierPersonne.Location = new System.Drawing.Point(384, 91);
-            this.cbx_TrierPersonne.Name = "cbx_TrierPersonne";
-            this.cbx_TrierPersonne.Size = new System.Drawing.Size(121, 21);
-            this.cbx_TrierPersonne.TabIndex = 5;
             // 
             // dgv
             // 
@@ -163,10 +125,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(709, 429);
             this.Controls.Add(this.dgv);
-            this.Controls.Add(this.cbx_TrierPersonne);
-            this.Controls.Add(this.cbx_NomPersonne);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Femer);
             this.Name = "ConsulterVoiture";
@@ -181,10 +139,6 @@
 
         private System.Windows.Forms.Button btn_Femer;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cbx_NomPersonne;
-        private System.Windows.Forms.ComboBox cbx_TrierPersonne;
         private System.Windows.Forms.DataGridView dgv;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nom;
         private System.Windows.Forms.DataGridViewTextBoxColumn Immatriculation;

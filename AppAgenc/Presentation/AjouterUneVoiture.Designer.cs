@@ -91,7 +91,6 @@
             this.label6.Size = new System.Drawing.Size(94, 13);
             this.label6.TabIndex = 5;
             this.label6.Text = "nom de la voiture :";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -108,6 +107,7 @@
             this.txt_Categorie.Name = "txt_Categorie";
             this.txt_Categorie.Size = new System.Drawing.Size(100, 20);
             this.txt_Categorie.TabIndex = 7;
+            this.txt_Categorie.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Categorie_KeyPress);
             // 
             // txt_Immatriculation
             // 
@@ -115,6 +115,7 @@
             this.txt_Immatriculation.Name = "txt_Immatriculation";
             this.txt_Immatriculation.Size = new System.Drawing.Size(100, 20);
             this.txt_Immatriculation.TabIndex = 9;
+            this.txt_Immatriculation.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Immatriculation_KeyPress);
             // 
             // txt_NomVoiture
             // 
@@ -122,6 +123,7 @@
             this.txt_NomVoiture.Name = "txt_NomVoiture";
             this.txt_NomVoiture.Size = new System.Drawing.Size(100, 20);
             this.txt_NomVoiture.TabIndex = 11;
+            this.txt_NomVoiture.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_NomVoiture_KeyPress);
             // 
             // txt_Puissance
             // 
@@ -129,6 +131,7 @@
             this.txt_Puissance.Name = "txt_Puissance";
             this.txt_Puissance.Size = new System.Drawing.Size(100, 20);
             this.txt_Puissance.TabIndex = 12;
+            this.txt_Puissance.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Puissance_KeyPress);
             // 
             // rb_Oui
             // 
