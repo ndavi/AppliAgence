@@ -13,8 +13,12 @@ namespace AppAgenc.Presentation
 {
     public partial class ConsulterVoiture : Form
     {
+        /// <summary>
+        /// Remplit le dgv avec les informations de la liste de voitures
+        /// </summary>
         public ConsulterVoiture()
         {
+            
             InitializeComponent();
             foreach (Voiture uneVoiture in Acceuil.UneAgence.ParcVoitures)
             {

@@ -23,7 +23,11 @@ namespace AppAgenc.Presentation
         {
             this.Close();
         }
-
+        /// <summary>
+        /// Ajoute une personne dans la collection d'agence en récupérant les valeurs du formulaire
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_Ajouter_Click(object sender, EventArgs e)
         {
             Personne unePersonne = new Personne(txt_Nom.Text, txt_Prenom.Text, txt_Ville.Text);

@@ -13,6 +13,9 @@ namespace AppAgenc.Presentation
 {
     public partial class ConsultationPersonne : Form
     {
+        /// <summary>
+        /// Ajoute les informations d'une personne au dgv
+        /// </summary>
         public ConsultationPersonne()
         {
             InitializeComponent();

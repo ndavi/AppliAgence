@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//Classe permetant d'inserer des valeurs dans une combobox
 namespace Metier
 {
     public class ComboBoxItem

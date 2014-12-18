@@ -57,3 +57,4 @@ M:\yhamo\ProjetVoiture\AppliAgence\AppAgenc\obj\Debug\AppAgenc.exe
 M:\yhamo\ProjetVoiture\AppliAgence\AppAgenc\obj\Debug\AppAgenc.pdb
 M:\yhamo\ProjetVoiture\AppliAgence\AppAgenc\obj\Debug\AppAgenc.Presentation.ConsultationPersonne.resources
 C:\Users\ndavi\Source\Repos\AppliAgence\AppAgenc\obj\Debug\AppAgenc.Presentation.ConsultationPersonne.resources
+C:\Users\Swagatropswag\Source\Repos\AppliAgence\AppAgenc\bin\Debug\AppAgenc.exe.config
