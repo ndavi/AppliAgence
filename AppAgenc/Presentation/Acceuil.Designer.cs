@@ -46,6 +46,8 @@
             this.consultationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toutesLesVoituresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toutesLesPersonnesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +59,7 @@
             this.consultationToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(410, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(527, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -73,6 +75,7 @@
             // 
             // chargerUneSauvegardeToolStripMenuItem
             // 
+            this.chargerUneSauvegardeToolStripMenuItem.Image = global::AppAgenc.Properties.Resources.logo;
             this.chargerUneSauvegardeToolStripMenuItem.Name = "chargerUneSauvegardeToolStripMenuItem";
             this.chargerUneSauvegardeToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
             this.chargerUneSauvegardeToolStripMenuItem.Text = "Charger une Sauvegarde";
@@ -80,6 +83,7 @@
             // 
             // sauvegarderLesDonnéesToolStripMenuItem
             // 
+            this.sauvegarderLesDonnéesToolStripMenuItem.Image = global::AppAgenc.Properties.Resources.logo;
             this.sauvegarderLesDonnéesToolStripMenuItem.Name = "sauvegarderLesDonnéesToolStripMenuItem";
             this.sauvegarderLesDonnéesToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
             this.sauvegarderLesDonnéesToolStripMenuItem.Text = "Sauvegarder les Données";
@@ -87,6 +91,7 @@
             // 
             // quitterToolStripMenuItem
             // 
+            this.quitterToolStripMenuItem.Image = global::AppAgenc.Properties.Resources.logo;
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
             this.quitterToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
             this.quitterToolStripMenuItem.Text = "Quitter";
@@ -107,8 +112,9 @@
             this.voituresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ajouterToolStripMenuItem,
             this.supprimerUneVoitureToolStripMenuItem});
+            this.voituresToolStripMenuItem.Image = global::AppAgenc.Properties.Resources.logo;
             this.voituresToolStripMenuItem.Name = "voituresToolStripMenuItem";
-            this.voituresToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.voituresToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.voituresToolStripMenuItem.Text = "Voitures";
             // 
             // ajouterToolStripMenuItem
@@ -130,8 +136,9 @@
             this.personnesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ajouterUnePersonneToolStripMenuItem,
             this.supprimerUnePersonneToolStripMenuItem});
+            this.personnesToolStripMenuItem.Image = global::AppAgenc.Properties.Resources.logo;
             this.personnesToolStripMenuItem.Name = "personnesToolStripMenuItem";
-            this.personnesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.personnesToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.personnesToolStripMenuItem.Text = "Personnes";
             // 
             // ajouterUnePersonneToolStripMenuItem
@@ -153,8 +160,9 @@
             this.locationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ajouterToolStripMenuItem1,
             this.rendreUneVoitureToolStripMenuItem});
+            this.locationsToolStripMenuItem.Image = global::AppAgenc.Properties.Resources.logo;
             this.locationsToolStripMenuItem.Name = "locationsToolStripMenuItem";
-            this.locationsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.locationsToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.locationsToolStripMenuItem.Text = "Locations";
             // 
             // ajouterToolStripMenuItem1
@@ -182,6 +190,7 @@
             // 
             // toutesLesVoituresToolStripMenuItem
             // 
+            this.toutesLesVoituresToolStripMenuItem.Image = global::AppAgenc.Properties.Resources.logo;
             this.toutesLesVoituresToolStripMenuItem.Name = "toutesLesVoituresToolStripMenuItem";
             this.toutesLesVoituresToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.toutesLesVoituresToolStripMenuItem.Text = "Toutes les voitures";
@@ -189,16 +198,43 @@
             // 
             // toutesLesPersonnesToolStripMenuItem
             // 
+            this.toutesLesPersonnesToolStripMenuItem.Image = global::AppAgenc.Properties.Resources.logo;
             this.toutesLesPersonnesToolStripMenuItem.Name = "toutesLesPersonnesToolStripMenuItem";
             this.toutesLesPersonnesToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.toutesLesPersonnesToolStripMenuItem.Text = "Toutes les personnes";
             this.toutesLesPersonnesToolStripMenuItem.Click += new System.EventHandler(this.toutesLesPersonnesToolStripMenuItem_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 27.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label1.Location = new System.Drawing.Point(26, 74);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(278, 38);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Location Garage ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Modern No. 20", 27.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label2.Location = new System.Drawing.Point(88, 112);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(137, 38);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Renault";
+            // 
             // Acceuil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(410, 262);
+            this.BackgroundImage = global::AppAgenc.Properties.Resources.renault;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(527, 283);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Acceuil";
@@ -230,6 +266,8 @@
         private System.Windows.Forms.ToolStripMenuItem toutesLesPersonnesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem chargerUneSauvegardeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sauvegarderLesDonnéesToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

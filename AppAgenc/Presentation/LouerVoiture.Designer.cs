@@ -82,28 +82,33 @@
             // 
             // btn_Fermer
             // 
+            this.btn_Fermer.BackColor = System.Drawing.Color.Red;
+            this.btn_Fermer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Fermer.Location = new System.Drawing.Point(90, 246);
             this.btn_Fermer.Name = "btn_Fermer";
             this.btn_Fermer.Size = new System.Drawing.Size(75, 23);
             this.btn_Fermer.TabIndex = 5;
             this.btn_Fermer.Text = "Fermer";
-            this.btn_Fermer.UseVisualStyleBackColor = true;
+            this.btn_Fermer.UseVisualStyleBackColor = false;
             this.btn_Fermer.Click += new System.EventHandler(this.btn_Fermer_Click);
             // 
             // btn_Valider
             // 
+            this.btn_Valider.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn_Valider.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Valider.Location = new System.Drawing.Point(251, 246);
             this.btn_Valider.Name = "btn_Valider";
             this.btn_Valider.Size = new System.Drawing.Size(75, 23);
             this.btn_Valider.TabIndex = 6;
             this.btn_Valider.Text = "Valider";
-            this.btn_Valider.UseVisualStyleBackColor = true;
+            this.btn_Valider.UseVisualStyleBackColor = false;
             this.btn_Valider.Click += new System.EventHandler(this.btn_Valider_Click);
             // 
             // LouerVoiture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(404, 296);
             this.Controls.Add(this.btn_Valider);
             this.Controls.Add(this.btn_Fermer);

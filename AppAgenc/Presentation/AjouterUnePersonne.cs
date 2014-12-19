@@ -34,5 +34,34 @@ namespace AppAgenc.Presentation
             Acceuil.UneAgence.AjouterPersonne(unePersonne);
             this.Close();
         }
+        /// <summary>
+        /// Vérification d'une entrée en lettre
+        /// </summary>
+        /// <param name="e"></param>
+        /// <param name="tbx"></param>
+        private void verificationTbx(KeyPressEventArgs e, TextBox tbx)
+        {
+            if (!char.IsControl(e.KeyChar)
+                && char.IsDigit(e.KeyChar)
+                && Convert.ToChar(",") != e.KeyChar)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_Nom_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            this.verificationTbx(e, txt_Nom);
+        }
+
+        private void txt_Prenom_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            this.verificationTbx(e, txt_Prenom);
+        }
+
+        private void txt_Ville_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            this.verificationTbx(e, txt_Ville);
+        }
     }
 }

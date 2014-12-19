@@ -67,18 +67,21 @@
             // 
             // btn_Fermer
             // 
+            this.btn_Fermer.BackColor = System.Drawing.Color.Red;
+            this.btn_Fermer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Fermer.Location = new System.Drawing.Point(326, 351);
             this.btn_Fermer.Name = "btn_Fermer";
             this.btn_Fermer.Size = new System.Drawing.Size(75, 23);
             this.btn_Fermer.TabIndex = 3;
             this.btn_Fermer.Text = "Fermer";
-            this.btn_Fermer.UseVisualStyleBackColor = true;
+            this.btn_Fermer.UseVisualStyleBackColor = false;
             this.btn_Fermer.Click += new System.EventHandler(this.btn_Fermer_Click);
             // 
             // ConsultationPersonne
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(758, 399);
             this.Controls.Add(this.btn_Fermer);
             this.Controls.Add(this.dgv_personne);

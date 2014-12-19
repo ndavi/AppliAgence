@@ -82,12 +82,12 @@ namespace AppAgenc.Presentation
 
         private void txt_Immatriculation_KeyPress(object sender, KeyPressEventArgs e)
         {
-            this.verificationTbx_digit(e, txt_Immatriculation);
+            //this.verificationTbx(e, txt_Immatriculation);
         }
 
         private void txt_NomVoiture_KeyPress(object sender, KeyPressEventArgs e)
         {
-            this.verificationTbx_digit(e, txt_NomVoiture);
+            this.verificationTbx(e, txt_NomVoiture);
         }
     }
 }

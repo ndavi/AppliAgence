@@ -42,13 +42,15 @@
             // 
             // btn_Femer
             // 
+            this.btn_Femer.BackColor = System.Drawing.Color.Red;
             this.btn_Femer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Femer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Femer.Location = new System.Drawing.Point(327, 395);
             this.btn_Femer.Name = "btn_Femer";
             this.btn_Femer.Size = new System.Drawing.Size(75, 23);
             this.btn_Femer.TabIndex = 0;
             this.btn_Femer.Text = "Femer";
-            this.btn_Femer.UseVisualStyleBackColor = true;
+            this.btn_Femer.UseVisualStyleBackColor = false;
             this.btn_Femer.Click += new System.EventHandler(this.btn_Femer_Click);
             // 
             // label1
@@ -123,6 +125,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(709, 429);
             this.Controls.Add(this.dgv);
             this.Controls.Add(this.label1);

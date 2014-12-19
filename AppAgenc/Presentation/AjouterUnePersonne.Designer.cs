@@ -77,22 +77,27 @@
             // 
             // btn_Fermer
             // 
+            this.btn_Fermer.BackColor = System.Drawing.Color.Red;
+            this.btn_Fermer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Fermer.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.btn_Fermer.Location = new System.Drawing.Point(190, 264);
             this.btn_Fermer.Name = "btn_Fermer";
             this.btn_Fermer.Size = new System.Drawing.Size(75, 23);
             this.btn_Fermer.TabIndex = 4;
             this.btn_Fermer.Text = "Fermer";
-            this.btn_Fermer.UseVisualStyleBackColor = true;
+            this.btn_Fermer.UseVisualStyleBackColor = false;
             this.btn_Fermer.Click += new System.EventHandler(this.btn_Fermer_Click);
             // 
             // btn_Ajouter
             // 
+            this.btn_Ajouter.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn_Ajouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Ajouter.Location = new System.Drawing.Point(332, 264);
             this.btn_Ajouter.Name = "btn_Ajouter";
             this.btn_Ajouter.Size = new System.Drawing.Size(75, 23);
             this.btn_Ajouter.TabIndex = 5;
             this.btn_Ajouter.Text = "Ajouter";
-            this.btn_Ajouter.UseVisualStyleBackColor = true;
+            this.btn_Ajouter.UseVisualStyleBackColor = false;
             this.btn_Ajouter.Click += new System.EventHandler(this.btn_Ajouter_Click);
             // 
             // txt_Nom
@@ -101,6 +106,7 @@
             this.txt_Nom.Name = "txt_Nom";
             this.txt_Nom.Size = new System.Drawing.Size(100, 20);
             this.txt_Nom.TabIndex = 6;
+            this.txt_Nom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Nom_KeyPress);
             // 
             // txt_Prenom
             // 
@@ -108,6 +114,7 @@
             this.txt_Prenom.Name = "txt_Prenom";
             this.txt_Prenom.Size = new System.Drawing.Size(100, 20);
             this.txt_Prenom.TabIndex = 7;
+            this.txt_Prenom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Prenom_KeyPress);
             // 
             // txt_Ville
             // 
@@ -120,6 +127,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(556, 321);
             this.Controls.Add(this.txt_Ville);
             this.Controls.Add(this.txt_Prenom);

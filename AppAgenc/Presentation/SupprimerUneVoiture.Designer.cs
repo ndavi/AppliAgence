@@ -64,28 +64,33 @@
             // 
             // btn_Fermer
             // 
+            this.btn_Fermer.BackColor = System.Drawing.Color.Red;
+            this.btn_Fermer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Fermer.Location = new System.Drawing.Point(65, 204);
             this.btn_Fermer.Name = "btn_Fermer";
             this.btn_Fermer.Size = new System.Drawing.Size(75, 23);
             this.btn_Fermer.TabIndex = 3;
             this.btn_Fermer.Text = "Fermer";
-            this.btn_Fermer.UseVisualStyleBackColor = true;
+            this.btn_Fermer.UseVisualStyleBackColor = false;
             this.btn_Fermer.Click += new System.EventHandler(this.btn_Fermer_Click);
             // 
             // btn_Ajouter
             // 
+            this.btn_Ajouter.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn_Ajouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Ajouter.Location = new System.Drawing.Point(229, 204);
             this.btn_Ajouter.Name = "btn_Ajouter";
             this.btn_Ajouter.Size = new System.Drawing.Size(75, 23);
             this.btn_Ajouter.TabIndex = 4;
             this.btn_Ajouter.Text = "Ajouter";
-            this.btn_Ajouter.UseVisualStyleBackColor = true;
+            this.btn_Ajouter.UseVisualStyleBackColor = false;
             this.btn_Ajouter.Click += new System.EventHandler(this.btn_Ajouter_Click);
             // 
             // SupprimerUneVoiture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(387, 262);
             this.Controls.Add(this.btn_Ajouter);
             this.Controls.Add(this.btn_Fermer);

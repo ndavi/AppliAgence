@@ -37,22 +37,26 @@
             // 
             // btn_Fermer
             // 
-            this.btn_Fermer.Location = new System.Drawing.Point(113, 253);
+            this.btn_Fermer.BackColor = System.Drawing.Color.Red;
+            this.btn_Fermer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Fermer.Location = new System.Drawing.Point(113, 254);
             this.btn_Fermer.Name = "btn_Fermer";
             this.btn_Fermer.Size = new System.Drawing.Size(75, 23);
             this.btn_Fermer.TabIndex = 0;
             this.btn_Fermer.Text = "Fermer";
-            this.btn_Fermer.UseVisualStyleBackColor = true;
+            this.btn_Fermer.UseVisualStyleBackColor = false;
             this.btn_Fermer.Click += new System.EventHandler(this.btn_Fermer_Click);
             // 
             // btn_Supprimer
             // 
+            this.btn_Supprimer.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn_Supprimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Supprimer.Location = new System.Drawing.Point(297, 253);
             this.btn_Supprimer.Name = "btn_Supprimer";
             this.btn_Supprimer.Size = new System.Drawing.Size(75, 23);
             this.btn_Supprimer.TabIndex = 1;
             this.btn_Supprimer.Text = "Supprimer";
-            this.btn_Supprimer.UseVisualStyleBackColor = true;
+            this.btn_Supprimer.UseVisualStyleBackColor = false;
             this.btn_Supprimer.Click += new System.EventHandler(this.btn_Supprimer_Click);
             // 
             // cbb_Personnes
@@ -85,6 +89,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(482, 322);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

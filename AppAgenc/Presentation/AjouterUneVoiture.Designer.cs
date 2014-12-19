@@ -157,22 +157,26 @@
             // 
             // btn_Ajouter
             // 
+            this.btn_Ajouter.BackColor = System.Drawing.Color.Chartreuse;
+            this.btn_Ajouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Ajouter.Location = new System.Drawing.Point(158, 354);
             this.btn_Ajouter.Name = "btn_Ajouter";
             this.btn_Ajouter.Size = new System.Drawing.Size(75, 23);
             this.btn_Ajouter.TabIndex = 15;
             this.btn_Ajouter.Text = "Ajouter";
-            this.btn_Ajouter.UseVisualStyleBackColor = true;
+            this.btn_Ajouter.UseVisualStyleBackColor = false;
             this.btn_Ajouter.Click += new System.EventHandler(this.btn_Ajouter_Click);
             // 
             // btn_Fermer
             // 
+            this.btn_Fermer.BackColor = System.Drawing.Color.Red;
+            this.btn_Fermer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Fermer.Location = new System.Drawing.Point(362, 354);
             this.btn_Fermer.Name = "btn_Fermer";
             this.btn_Fermer.Size = new System.Drawing.Size(75, 23);
             this.btn_Fermer.TabIndex = 16;
             this.btn_Fermer.Text = "Fermer";
-            this.btn_Fermer.UseVisualStyleBackColor = true;
+            this.btn_Fermer.UseVisualStyleBackColor = false;
             this.btn_Fermer.Click += new System.EventHandler(this.btn_Fermer_Click);
             // 
             // txt_dateMiseEnService
@@ -187,7 +191,7 @@
             // 
             this.groupBox1.Controls.Add(this.rb_Non);
             this.groupBox1.Controls.Add(this.rb_Oui);
-            this.groupBox1.Location = new System.Drawing.Point(280, 86);
+            this.groupBox1.Location = new System.Drawing.Point(281, 95);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 40);
             this.groupBox1.TabIndex = 18;
@@ -197,6 +201,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(621, 398);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txt_dateMiseEnService);
